@@ -13,13 +13,11 @@ public:
   void displayBalance() const; // Should update accessCount
 
 private:
-  // TODO: Add friend declaration
-
-  // TODO: Mark appropriate member as mutable
+  friend class Auditor;
   
   std::string accountNumber;
   float accountBalance;
-  unsigned int transactionCount = 0;
+  mutable unsigned int transactionCount = 0;
 };
 
 #endif
