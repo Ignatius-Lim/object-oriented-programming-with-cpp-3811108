@@ -4,8 +4,7 @@
 #include "character.h"
 #include "equipment.h"
 
-// TODO: Inherit from Character, use composition to integrate Equipment behavior
-class Warrior
+class Warrior : public Character
 {
 public:
   Warrior(const std::string &name, int health, int strength);
@@ -15,7 +14,7 @@ public:
 
 private:
   int strength;
-  // TODO: Add Equipment member
+  Equipment equip;
 };
 
 #endif

@@ -6,9 +6,9 @@
 int main()
 {
   std::vector<Ability *> abilities;
-  abilities.push_back(new RangedAttack("Heat Vision", 50));
-  abilities.push_back(new MeleeAttack("Super Strength", 30));
-  abilities.push_back(new DefensiveAbility("Force Field", 20));
+  abilities.push_back(new RangedAttack("Dark Wave", 10000));
+  abilities.push_back(new MeleeAttack("Sword of UDENBRIX", 69420));
+  abilities.push_back(new DefensiveAbility("Force Field", 2000));
 
   for (const Ability *ability : abilities)
   {

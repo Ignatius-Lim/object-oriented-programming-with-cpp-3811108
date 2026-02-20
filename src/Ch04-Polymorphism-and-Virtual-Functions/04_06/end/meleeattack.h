@@ -7,9 +7,11 @@ class MeleeAttack : public Ability
 {
 public:
   MeleeAttack(const std::string &name, int force);
+  ~MeleeAttack();
 
-  // TODO: Override use()
-  // TODO: Override describe()
+  void use() const override;
+  void describe() const override;
+
 private:
   int impactForce;
 };

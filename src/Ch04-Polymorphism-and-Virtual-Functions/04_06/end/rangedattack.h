@@ -7,9 +7,10 @@ class RangedAttack : public Ability
 {
 public:
   RangedAttack(const std::string &name, int range);
+  ~RangedAttack();
 
-  // TODO: Override use()
-  // TODO: Override describe()
+  void use() const override;
+  void describe() const override;
 
 private:
   int rangeValue; // Range in meters
